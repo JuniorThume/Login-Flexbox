@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    
+    main {
+        height: 50%;
+    }
+
+    form {
+        padding: 30px;
+    }
+    
+    form > h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    form > p {
+        font-size: 1.4em;
+    }
+
+    div#buttons {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        margin-right: -30px;
+        width: 95%;
+    }
+
+    #buttons > input[type = 'submit'] {
+        align-self: baseline;
+        transform: none;
+        width: 50%;
+        margin: 0px;
+    }
+
+    #buttons > a {
+        width: 50%;
+        margin: 0px;
+    }
+
+
+}
