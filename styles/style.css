@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 80vw;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.507);
+    padding: 20px;
+}
+
+section.formulario {
+    width: 90%;
+    height: 70%;
+}
+
+form > h1 {
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form > p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+div {
+    display: flex;
+}
+
+div > span {
+    align-self: center;
+}
+
+input.box_input {
+    width: 90%;
+    height: 40px;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #51fcf981;
+    line-height: 10px;
+}
+
+div > label {
+    display: none;
+}
+
+#buttons {
+    display: block;
+    margin: 10px 0px;
+}
+
+#buttons > input[type = 'submit'] {
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 1.1em;
+    background-color: #995dba6b;
+    border: none;
+    transform: translateX(10px);
+}
+
+#buttons > input[type = 'submit']:hover {
+    background-color: #876a99;
+    cursor: pointer;
+}
+
+#buttons > a {
+    display: block;
+    height: 50px;
+    width: 90%;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    background-color: #876a99;
+    color: black;
+    line-height: 50px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    transform: translateX(10px);
+}
