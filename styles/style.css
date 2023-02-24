@@ -26,20 +26,24 @@ body {
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(255, 255, 255, 0.829);
     width: 80vw;
     height: 400px;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.507);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
     padding: 20px;
 }
 
 section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
+}
+
+form {
+    width: 80%;
 }
 
 form > h1 {
@@ -55,21 +59,34 @@ form > p {
 
 div {
     display: flex;
+    width: 100%;
 }
 
 div > span {
     align-self: center;
+    justify-self: flex-end;
+    width: 10%;
+}
+
+div > input {
+    justify-self: flex-end;
+    width: 90%;
 }
 
 input.box_input {
     width: 90%;
     height: 40px;
-    margin: 5px auto;
+    margin: 5px 0px 5px 5px;
     padding: 5px;
     border-radius: 5px;
     border: none;
+    font-size: 1em;
     background-color: #51fcf981;
     line-height: 10px;
+}
+
+input.box_input::placeholder {
+    color: black;
 }
 
 div > label {
@@ -83,14 +100,14 @@ div > label {
 
 #buttons > input[type = 'submit'] {
     display: block;
-    width: 90%;
+    width: 100%;
     height: 50px;
     margin: auto;
     border-radius: 20px;
     font-size: 1.1em;
     background-color: #995dba6b;
     border: none;
-    transform: translateX(10px);
+    
 }
 
 #buttons > input[type = 'submit']:hover {
@@ -101,7 +118,7 @@ div > label {
 #buttons > a {
     display: block;
     height: 50px;
-    width: 90%;
+    width: 100%;
     text-decoration: none;
     text-align: center;
     margin: auto;
@@ -111,5 +128,5 @@ div > label {
     margin-top: 10px;
     font-size: 1.1em;
     border-radius: 20px;
-    transform: translateX(10px);
+    
 }

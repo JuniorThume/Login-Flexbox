@@ -3,11 +3,12 @@
 @media screen and (min-width: 768px) and (max-width: 979px) {
     
     main {
+        width: 70%;
         height: 50%;
     }
 
     form {
-        padding: 30px;
+        padding: 20px;
     }
     
     form > h1 {
@@ -21,23 +22,135 @@
 
     div#buttons {
         display: flex;
-        justify-content: space-between;
-        padding-left: 40px;
-        margin-right: -30px;
-        width: 95%;
+        justify-content: flex-start;
+        width: 100%;
     }
 
     #buttons > input[type = 'submit'] {
-        align-self: baseline;
-        transform: none;
+        justify-self: flex-end;
+        width: 50%;
+    }
+
+    div#buttons > a {
+        justify-self: flex-start;
+        width: 50%;
+        margin: 0px 0px 0px 5px;
+    }
+}
+
+@media screen and (min-width: 979px) and (max-width: 1200px) {
+
+    main {
+        height: 55%;
+        padding: 50px;
+    }
+
+    form {
+        height: 100%;
+        width: 80%;
+        padding: 10px;
+    }
+    
+    form > h1 {
+        font-size: 3em;
+        margin: 10px 0px;
+    }
+
+    form > p {
+        font-size: 1.5em;
+        padding: 0px;
+    }
+
+    form > div {
+        justify-content: space-between;
+    }
+
+    form span{
+        width: 24px;
+        padding-left: 20px;
+    }
+
+    #box_email {
+        margin-top: 30px;
+    }
+
+    #box_email > .box_input {
+        height: 50px;
+    }
+
+    #box_senha {
+        margin-bottom: 30px;
+    }
+
+    #box_senha > .box_input {
+        height: 50px;
+    }
+
+    div .box_input {
+        border-radius: 20px;
+        padding-left: 20px;
+    }
+
+    div .box_input:focus {
+        padding-left: 20px;
+    }
+
+    .box_input {
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    div#buttons input[type="submit"] {
+        width: 50%;
+        flex-basis: 70%;
+        margin-right: 10px;
+    }
+
+    #buttons  a {
+        flex-shrink: 3;
         width: 50%;
         margin: 0px;
     }
+}
 
-    #buttons > a {
-        width: 50%;
-        margin: 0px;
+
+@media screen and (min-width: 1200px) {
+    
+    main {
+        width: 40%;
+        height: 60%;
     }
 
+    form > h1 {
+        font-size: 3em;
+    }
+
+    form > p {
+        font-size: 1.5em;
+    }
+
+    #box_senha {
+        margin-bottom: 30px;
+    }
+
+    div .box_input {
+        height: 50px;
+        border-radius: 20px;
+        padding-left: 20px;
+    }
+
+    div .box_input:focus {
+        padding-left: 20px;
+    }
+
+    .box_input {
+        height: 50px;
+        font-size: 1.2em;
+    }
 
 }
