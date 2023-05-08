@@ -107,7 +107,9 @@
 
     div#buttons input[type="submit"] {
         width: 50%;
-        flex-basis: 70%;
+        margin-left: 60px;
+        
+        
         margin-right: 10px;
     }
 
